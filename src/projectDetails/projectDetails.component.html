@@ -1,0 +1,89 @@
+<div class='dialogSize'>
+    <h2>{{selectedProject.name}}</h2>
+    <div *ngIf="selectedProject.name == 'Global Lion Mentor WebApp'">
+        <p>  Location : Pennsylvania State University <br />
+             Dates Attented: January 2016 – March 2016
+        </p>
+        <md-tab-group>
+            <md-tab label="Description">
+                <p class="fonts"> Using WAMP Server, I created a web user interface for the Global Lion Mentor program
+                    at Penn State. Via this interface, students could register either as a mentee or mentor
+                    and interact with other students on campus. This program is a mentoring program where
+                    existing Penn State students can help incoming international students acclimatize to
+                    the new surroundings. 
+                </p>
+            </md-tab>
+            <md-tab label="Functionalities">
+                <ul class="fonts">
+                    <li>Users can send messages, view campus events, 
+                        and view the list of other users registered in the website.</li>
+                    <li>Users also have their profile page where edits can be made.</li>
+                    <li>Admin has a special privilege where they can add events, pair-up mentors and mentees.</li>
+                    <li>Links to important information (such as health insurance links, etc) are posted by the admin.</li>
+                 </ul>
+            </md-tab>
+            <md-tab label="Languages Used">
+                <ul class="fonts">
+                    <li> WAMP: Windows, Apache, MySQL, PHP </li>
+                    <li>HTML, CSS, JavaScript </li>
+                </ul>
+            </md-tab>
+        </md-tab-group>
+    </div>
+    <div *ngIf="selectedProject.name == 'Kick in for Kids'">
+        <p>  Location : Pennsylvania State University <br />
+             Dates Attented: January 2015 – March 2015
+        </p>
+        <md-tab-group>
+            <md-tab label="Description">
+                <p class="fonts"> Requirements for a Web User Interface were determined for 'Kick in for Kids', 
+                    a charitable organization in Central Pennsylvania who help students & families
+                     going through temporary hardship. The project's focus was the effective collection
+                      of user analysis and requirements to build a web user interface. 
+                </p>
+            </md-tab>
+            <md-tab label="Functionalities">
+                <ul class="fonts">
+                    <li>Survey forms were coded in HTML5, and were sent to the board of the organization
+                         for their valuable input.</li>
+                    <li>Upon submission, the form would be sent to the "kick in for kids' gmail account.</li>
+                    <li>This was achieved by using the WAMP server and making changes to the "send_mail.ini" file.</li>
+                    <li>Once a design was fixed, the web user interface was created using HTML5, CSS and PHP.</li>
+                 </ul>
+            </md-tab>
+            <md-tab label="Languages Used">
+                <ul class="fonts">
+                    <li> WAMP: Windows, Apache, MySQL, PHP </li>
+                    <li>HTML, CSS, JavaScript </li>
+                </ul>
+            </md-tab>
+        </md-tab-group>
+    </div>
+    <div *ngIf="selectedProject.name == 'Brownstone Cafe'">
+        <p>  Location : Pennsylvania State University <br />
+             Dates Attented: August 2015 – December 2015
+        </p>
+        <md-tab-group>
+            <md-tab label="Description">
+                <p class="fonts"> Created a database for a local restaurant, Brownstone Cafe, in Middletown, P.A. 
+                    Firstly, an ERD was created in Microsoft Visio for the design of the database.
+                    This database design will help Brownstone Cafe expand
+                    its business by allowing them to accept online orders for take-away or delivery along
+                    with the functionality of online reservations available to customers.
+                </p>
+            </md-tab>
+            <md-tab label="Functionalities">
+                <ul class="fonts">
+                    <li>Allows the database to store a variety of orders including dine-in customer information</li>
+                    <li>Gives the restaurant an easier way to keep track of vital business information.</li>
+                 </ul>
+            </md-tab>
+            <md-tab label="Languages Used">
+                <ul class="fonts">
+                    <li> Databases: Oracle, MS Access </li>
+                    <li> SQL </li>
+                </ul>
+            </md-tab>
+        </md-tab-group>
+    </div>
+</div>

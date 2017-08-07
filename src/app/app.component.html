@@ -1,0 +1,66 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div class="background" style="text-align:center" flex="20">
+    <div>
+        <h1 style="font-family:Georgia, 'Times New Roman', Times, serif">
+            Welcome to {{title}}!
+        </h1>
+        <img width="300" src="assets/images/headshot.jpg" />
+
+   </div>
+    <div>
+        <md-tab-group>
+            <md-tab label="Education">
+                <table id="myTable" class="schools">
+                    <tbody class="fonts">
+                        <tr *ngFor="let school of schools">
+                            <td class="badge">{{school.id}}</td>
+                            <td (click)="onSelectSchool(school)">{{school.name}}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </md-tab>
+            <md-tab label="Experience">
+                <table id="myTable" class="jobs">
+                    <tbody class="fonts">
+                        <tr *ngFor="let job of jobs">
+                            <td class="badge">{{job.id}}</td>
+                            <td (click)="onSelectJob(job)">{{job.name}}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </md-tab>
+            <md-tab label="Projects">
+                <table id="myTable" class="projects">
+                    <tbody class="fonts">
+                        <tr *ngFor="let project of projects">
+                            <td class="badge">{{project.id}}</td>
+                            <td (click)="onSelectProject(project)">{{project.name}}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </md-tab>
+            <md-tab label="Awards and Certifications">
+                <table id="myTable">
+                    <tbody class="fonts">
+                        <tr>
+                            <td class="badge">1</td>
+                            <td (click)="onSelectAward(1)">Outstanding MSIS Award at Penn State</td>
+                        </tr>
+                        <tr>
+                            <td class="badge">2</td>
+                            <td (click)="onSelectAward(2)">Beta Gamma Sigma Society Member at Penn State</td>
+                        </tr>
+                        <tr>
+                            <td class="badge">3</td>
+                            <td (click)="onSelectAward(3)">IBM Certified DB2 9 Academic Associate</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </md-tab>
+        </md-tab-group>
+    </div>
+</div>
+
+
+
+
