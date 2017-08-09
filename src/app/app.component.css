@@ -4,6 +4,10 @@
   .fonts{
     font-family:Georgia, 'Times New Roman', Times, serif;
   }
+  .aboutMe{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    text-align: left;
+  }
   .schools, .jobs {
     margin: 0 0 2em 0;
     list-style-type: none;
